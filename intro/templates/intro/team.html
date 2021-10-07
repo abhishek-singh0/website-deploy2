@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +29,7 @@
                 <div class="col-lg-4 mb-3">
                     <div class="card">
                         <div class="img-container">
-                            <img src="1.jpg" alt="" class="card-img-top animated fadeInDown" style="animation-delay: 1s">
+                            <img src="{% static 'intro/img/team/1.jpg' %}" alt="" class="card-img-top animated fadeInDown" style="animation-delay: 1s">
                         </div>
                         <div class="card-body">
                             <div class="text-center">
@@ -40,20 +41,21 @@
 
                             <ul class="list-inline text-center">
                                 <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-info"></i></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram text-info"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-envelope text-info"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fab fa-twitter text-info"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin text-info"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+<!-- End Navbar  -->
 
-<!-- Start Second Card -->
+<!-- Start First Card -->
 
                 <div class="col-lg-4 mb-3">
                     <div class="card">
                         <div class="img-container">
-                            <img src="team/team1.png" alt="" class="card-img-top animated fadeInUp" style="animation-delay: 1s" height="427px" width="640px">
+                            <img src="{% static 'intro/img/team/team1.png' %}" alt="" class="card-img-top animated fadeInUp" style="animation-delay: 1s" height="427px" width="640px">
                         </div>
                         <div class="card-body">
                             <div class="text-center">
@@ -64,8 +66,8 @@
                             <p class="card-text">Current research work is on understanding the differences of genome-wide DNA methylation of drought susceptible and tolerant rice cultivars and their epigenetic responses to drought stress. </p>
 
                             <ul class="list-inline text-center">
-                                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-info"></i></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram text-info"></i></a></li>
+                                <li class="list-inline-item animated fadeInDown"><a href="#"><i class="fab fa-facebook text-info"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-envelope text-info"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fab fa-twitter text-info"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin text-info"></i></a></li>
                             </ul>
@@ -73,12 +75,14 @@
                     </div>
                 </div>
 
+<!-- End First Card -->
+
 <!-- Start Second Card -->
 
                 <div class="col-lg-4 mb-3">
                     <div class="card">
                         <div class="img-container">
-                            <img src="team/team2.png" alt="" class="card-img-top">
+                            <img src="{% static 'intro/img/team/team2.png' %}" alt="" class="card-img-top">
                         </div>
                         <div class="card-body">
                             <div class="text-center">
@@ -90,7 +94,7 @@
 
                             <ul class="list-inline text-center">
                                 <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-info"></i></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram text-info"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-envelope text-info"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fab fa-twitter text-info"></i></a></li>
                                 <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin text-info"></i></a></li>
                             </ul>
@@ -98,16 +102,16 @@
                     </div>
                 </div>
 
-<!-- Start Second Card -->
+<!-- End Second Card -->
 
 
 
-<!-- Start Second Card -->
+<!-- Start Third Card -->
 
 <div class="col-lg-4 mb-3">
     <div class="card">
         <div class="img-container">
-            <img src="team/SR.png" alt="" class="card-img-top">
+            <img src="{% static 'intro/img/team/SR.png' %}" alt="" class="card-img-top">
         </div>
         <div class="card-body">
             <div class="text-center">
@@ -119,7 +123,7 @@
 
             <ul class="list-inline text-center">
                 <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-info"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram text-info"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-envelope text-info"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fab fa-twitter text-info"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin text-info"></i></a></li>
             </ul>
@@ -127,16 +131,14 @@
     </div>
 </div>
 
-<!-- Start Second Card -->
+<!-- End Third Card -->
 
-
-
-<!-- Start Second Card -->
+<!-- Start Fourth Card -->
 
 <div class="col-lg-4 mb-3">
     <div class="card">
         <div class="img-container">
-            <img src="1.jpg" alt="" class="card-img-top">
+            <img src="{% static 'intro/img/team/1.jpg' %}" alt="" class="card-img-top">
         </div>
         <div class="card-body">
             <div class="text-center">
@@ -148,7 +150,7 @@
 
             <ul class="list-inline text-center">
                 <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-info"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram text-info"></i></a></li>
+                <li class="list-inline-item"><a href="mailto:saurabh@genomeindia.org"><i class="fa fa-envelope text-info"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fab fa-twitter text-info"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin text-info"></i></a></li>
             </ul>
@@ -156,16 +158,16 @@
     </div>
 </div>
 
-<!-- Start Second Card -->
+<!-- End Fourth Card -->
 
 
 
-<!-- Start Second Card -->
+<!-- Start Fifth Card -->
 
 <div class="col-lg-4 mb-3">
     <div class="card">
         <div class="img-container">
-            <img src="1.jpg" alt="" class="card-img-top">
+            <img src="{% static 'intro/img/team/1.jpg' %}" alt="" class="card-img-top">
         </div>
         <div class="card-body">
             <div class="text-center">
@@ -177,7 +179,7 @@
 
             <ul class="list-inline text-center">
                 <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-info"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram text-info"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-envelope text-info"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fab fa-twitter text-info"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin text-info"></i></a></li>
             </ul>
@@ -185,7 +187,7 @@
     </div>
 </div>
 
-<!-- Start Second Card -->
+<!-- End fifth Card -->
                     
                        
 
