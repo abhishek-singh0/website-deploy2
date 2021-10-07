@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'intro/css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+<!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="navbar-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="{% static 'intro/img/team/logo.png' %}" alt="DU Logo" height="76px"><span class="lab-text">S.Raghuvanshi Lab</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=" {% url 'team' %} ">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://genomeindia.du.ac.in/biocuration/index.php">Database</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="getstarted">Jobs</a>
+                </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+<!-- Stop Navbar -->
+animate__swing
+<!-- Start Carousel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+ </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'intro/img/slider/rice4.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+                <h5 class="animated fadeInDown" style="animation-delay: 1s">First slide label</h5>
+                <p class="animated fadeInDown d-none d-md-block" style="animation-delay: 1s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laboriosam veritatis quos! Deserunt!</p>
+                <p class="animated fadeInUp swing" style="animation-delay: 1s">
+                    <a href="#">Learn More</a>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'intro/img/slider/rice5.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+                <h5 class="animated fadeInDown" style="animation-delay: 1s">First slide label</h5>
+                <p class="animated fadeInDown d-none d-md-block" style="animation-delay: 1s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laboriosam veritatis quos! Deserunt!</p>
+                <p class="animated fadeInUp" style="animation-delay: 1s">
+                    <a href="#">Learn More</a>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'intro/img/slider/rice3.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+                <h5 class="animated fadeInDown" style="animation-delay: 1s">First slide label</h5>
+                <p class="animated fadeInDown d-none d-md-block" style="animation-delay: 1s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laboriosam veritatis quos! Deserunt!</p>
+                <p class="animated fadeInUp" style="animation-delay: 3s">
+                    <a href="#">Learn More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Stop Carousel -->
+
+{% block content %}
+
+
+{% endblock content %}
+
+{% comment %} 
+<section class="main">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat alias exercitationem officia, aliquam minima aut, laboriosam nulla nemo iusto reprehenderit quae perspiciatis nesciunt nisi ad architecto provident temporibus. Odit minus provident reprehenderit id debitis vel ut molestiae atque quaerat labore, earum, dolor nesciunt ducimus, quasi dicta laudantium dolore fugiat. Sed expedita esse corrupti neque ipsam ea quidem soluta, officia ipsum, laborum sapiente pariatur nulla quos fugit? Amet, laudantium! Enim tempora ipsum dolore, eum doloribus veniam odio officiis voluptates porro, tenetur, dolor nesciunt quia sapiente debitis quasi. Suscipit reprehenderit corporis aliquam mollitia, placeat eligendi asperiores itaque ipsa qui error quas aperiam animi repellat veniam libero vel nobis quam quibusdam quo? Quis tenetur distinctio doloremque excepturi minus error doloribus aliquam temporibus voluptatem, earum illum voluptatum quia iure officiis ratione laborum itaque autem corporis voluptatibus debitis maiores delectus. Quas nesciunt non voluptatem sequi maiores fugiat impedit quo, repellat provident eum, laudantium, alias magni dolorum illum animi mollitia atque molestiae. Obcaecati maxime est beatae mollitia dolorum. Aperiam beatae consequatur magnam itaque, delectus inventore nam incidunt quasi, nemo, ex nisi ut ullam ab voluptate. Impedit voluptate facilis asperiores enim maiores ea maxime eos. Consequatur explicabo sit dolorem atque accusamus, reiciendis animi dolores incidunt vero dignissimos voluptatem alias ipsam expedita hic saepe cumque, excepturi doloribus odio quia mollitia deserunt reprehenderit asperiores ab eveniet. Corporis, tempore asperiores ratione provident ullam quasi inventore! Necessitatibus officiis aperiam labore tempore, nostrum dolor numquam quis doloribus eum quibusdam aliquid sint velit in laboriosam? Ipsum illo sunt nisi sit molestiae similique, nam modi distinctio iure totam quasi commodi, dolor nulla officiis amet adipisci error. Dolorem ipsam molestiae voluptates sapiente eos neque numquam incidunt voluptate natus, ullam necessitatibus iure autem laborum eius omnis asperiores est atque odio placeat. Voluptates aliquam eos officiis corporis. Enim commodi rem ea eveniet officia earum nam, quidem qui numquam a modi recusandae? Nihil enim maiores nam laborum eius aliquam quos, tempora quaerat dolorem, sapiente qui excepturi quo maxime repellendus exercitationem beatae praesentium. Dignissimos reprehenderit ad velit corporis eum dolore dolor blanditiis vel quae id, eligendi sint quos magnam harum laboriosam. Nostrum quo aperiam consectetur dignissimos amet necessitatibus et voluptas quae maxime. Mollitia harum natus porro, eos magnam dolore commodi quos incidunt cum enim dignissimos ab animi error, temporibus quo? Tempora impedit accusantium ducimus tenetur quidem, excepturi, dolorem perspiciatis laborum doloremque ratione unde voluptatem vel explicabo asperiores distinctio, quae cumque fugit quo itaque vero laudantium? Repudiandae ullam repellendus numquam? Iste nisi voluptates excepturi distinctio, magni illo dolorum dolor, enim magnam accusamus voluptatum illum perferendis, molestias neque. Cumque iusto laboriosam voluptate rem nulla ducimus ratione et aperiam obcaecati dolor, consequatur consectetur omnis, labore suscipit nisi! Quae reprehenderit tempore atque. Provident, saepe inventore? Voluptatibus molestias voluptates qui, quas esse aut totam sit alias eum cupiditate minus, impedit veritatis corporis. Officiis facilis culpa deserunt nam laboriosam magni sequi deleniti expedita possimus tenetur. Voluptatum, saepe molestiae vitae recusandae tempore dolor, voluptatem nemo aut veritatis nulla similique, fuga repudiandae accusamus. Amet modi consequatur, temporibus similique labore cum quae. Doloribus, quae. Blanditiis, nisi! Repellendus aliquid deleniti inventore qui distinctio praesentium suscipit tenetur fuga dicta ducimus iure commodi explicabo alias unde vitae tempore non maxime quam facilis, dignissimos excepturi doloribus officiis harum. Adipisci, ipsam et! Accusantium dolor voluptas eos veniam cumque aut itaque harum quis iure unde explicabo soluta optio quod adipisci recusandae rerum totam, saepe exercitationem. Aliquam nam eveniet odit aspernatur numquam, non est velit sed recusandae facilis libero quo. Similique sint doloremque ipsum optio aliquam perspiciatis, autem, illo dolorum praesentium excepturi expedita libero. Sequi dolore est laboriosam officia debitis nihil accusantium, vel perferendis! Quia veniam facere officiis, minus neque temporibus voluptates architecto, perferendis itaque magnam iste! Fugiat odio recusandae harum repellat minima, assumenda magnam mollitia suscipit repudiandae ipsam accusamus, rem molestiae officiis magni dolorem officia. Est quaerat eligendi aliquid inventore sequi aperiam ipsam exercitationem atque explicabo ullam incidunt laborum porro, maiores non sunt ad officiis? Pariatur modi eum totam consequuntur, excepturi voluptatem perspiciatis laborum expedita recusandae ea in at dignissimos voluptatum iusto porro incidunt beatae non nemo corporis? Cum incidunt rem earum unde debitis fugiat repellat corrupti deserunt at eius vero voluptatibus, expedita quam dignissimos? Atque similique qui quod sed facilis et aperiam ut maxime quaerat cupiditate consequuntur autem nihil velit, veniam dignissimos exercitationem quidem cumque, veritatis magni labore impedit temporibus eius fuga sit! Dolores soluta quaerat cum ut dolorem optio numquam, in hic cupiditate. Nesciunt cum atque repudiandae quo iure tempora ut quos debitis. Dolore corporis cupiditate eaque eius laboriosam maiores quasi alias aut eum tempora temporibus consequatur mollitia vel obcaecati, odit vitae labore esse quae optio magnam, sed at incidunt. Rerum libero, ducimus tempora quisquam quis sequi amet enim, qui ullam earum eligendi dolorum cum vero et, neque aliquid non ea natus quidem? Earum repellat consequuntur aspernatur impedit rerum. Deserunt facilis consequuntur totam maxime tempore, cum sequi ipsa animi quis, eius aliquid numquam suscipit beatae dolorem. Debitis sunt itaque enim cupiditate possimus soluta totam eius exercitationem voluptas incidunt, voluptates officia id quo beatae veniam aperiam at provident nemo dolor quod cumque maxime, ipsa tempore quaerat. Officiis minima vero, hic est quisquam, iusto eos neque, omnis minus porro voluptate? Officia, est rem quod ducimus soluta eligendi cumque iste accusamus architecto, fugiat sint natus tempore veritatis ea exercitationem dolorem non ipsa, corrupti nam labore libero! Voluptates possimus consequuntur tempore laudantium. Odit sequi magni amet tenetur corrupti quia dignissimos obcaecati, quibusdam vitae, natus suscipit numquam laborum aperiam autem eius animi perferendis illo reprehenderit minima cumque!</p>
+</section> {% endcomment %}
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+</body>
+</html>
