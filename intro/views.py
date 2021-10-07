@@ -6,3 +6,6 @@ def index(request):
 
 def team(request):
     return render(request, 'intro/team.html')
+
+def publication(request):
+    return render(request, 'intro/publication.html')
