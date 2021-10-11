@@ -9,3 +9,12 @@ def team(request):
 
 def publication(request):
     return render(request, 'intro/publication.html')
+
+def caro(request):
+    return render(request, 'intro/carousel.html')
+
+def sect(request):
+    return render(request, 'intro/section.html')
+
+def test(request):
+    return render(request, 'intro/test.html')
