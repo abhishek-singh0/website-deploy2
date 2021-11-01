@@ -172,6 +172,12 @@ span .lab-text .ms-3{
 
 /* Footer Section End */
 
+/* Publication */
+    #content-box{
+        margin-top: 150px;
+    }
+/* End Publication */
+
 @media only screen and (max-width: 767px){
     .navbar-nav{
         text-align: center;
