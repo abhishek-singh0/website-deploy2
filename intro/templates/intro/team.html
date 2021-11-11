@@ -2,10 +2,10 @@
 {% extends 'intro/base.html' %}
 {% load static %}
 
-<div>
-{% block content %}
 
-<section id="team-header" class="mt-10">
+{% block content %}
+<div style="margin-top:150px;">
+<section id="team-header" class="mt-2">
         <div class="container" >
         <section class="jumbotron text-center bg-light">
             <h1 class="display-5 text-info" >Our Team</h1>
@@ -17,26 +17,45 @@
     </div> 
 </section>
 <!-- Principal Investigator Header -->
-<section class="main-head my-5">
+<section class="main-head my-10">
         <div class="text-center">
             <h1 class="display-4">Principal Investigator</h1>
             <hr class="w-25 mx-auto">
         </div>
 </section>
 
-<section class="pi">
-    <div class="container border w-100">
-        <div class="row sm-auto">
+<div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-3 text-center">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="{% static 'intro/img/team/SR.png' %}" alt="" class="card-img-top animated fadeInDown" style="animation-delay: 1s">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title text-info">Saurbh Raghuvanshi</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">PhD Scholar</h6>
+                            </div>
+
+                            <p class="card-text">Worked towards semantic digitization of experimental data and characterization of drought responsive transcription factors in rice</p>
+
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook text-info"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-envelope text-info"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter text-info"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin text-info"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-
-
-
-        </div>
-    </div>
-</section>
 
 <!-- End Principal Investigator Header -->
+
+
+
 
 
 <!-- Reseearch Scholar Heading -->
@@ -215,7 +234,7 @@
 </section>
 
 <!-- End fifth Card -->
-
+</div>
 {% endblock content %}
-</div> 
+
    

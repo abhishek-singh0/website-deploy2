@@ -18,3 +18,6 @@ def sect(request):
 
 def test(request):
     return render(request, 'intro/test.html')
+
+def research(request):
+    return render(request, 'intro/research.html')

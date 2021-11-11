@@ -1,6 +1,6 @@
 Select publications:
-Parveen I, Singh HK, Malik S, Raghuvanshi S, Babbar SB. (2017) Evaluating five different loci (rbcL, rpoB, rpoC1, matK, and ITS) for DNA barcoding of Indian orchids. Genome. 2017 Aug;60(8):665-671. doi: 10.1139/gen-2016-0215. Epub 2017 May 17.
 
+Parveen I, Singh HK, Malik S, Raghuvanshi S, Babbar SB. (2017) Evaluating five different loci (rbcL, rpoB, rpoC1, matK, and ITS) for DNA barcoding of Indian orchids. Genome. 2017 Aug;60(8):665-671. doi: 10.1139/gen-2016-0215. Epub 2017 May 17.
 
 Balyan S, Kumar M, Mutum RD, Raghuvanshi U, Agarwal P, Mathur S, Raghuvanshi S. (2017) Identification of miRNA-mediated drought responsive multi-tiered regulatory network in drought tolerant rice, Nagina 22.. Sci Rep. 2017 Nov 13;7(1):15446. doi: 10.1038/s41598-017-15450-1.
 

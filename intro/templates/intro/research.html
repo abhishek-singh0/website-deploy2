@@ -4,7 +4,10 @@
 
 <div>
 {% block content %}
-<!-- Start Carousel -->
+
+    <div class="container">
+        <div class="row">
+              <!-- Start Carousel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -53,38 +56,8 @@
         </button>
     </div> 
 <!-- Stop Carousel -->
-
-<!-- Start Content  -->
-<div class="container mt-2">
-        <!-- Start First Row -->
-    <div class="row">
-        <div class="col">
-            <img src="" alt="">
-        </div>
-        <div class="col">
-            <h1>Research in the Lab</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus facilis nostrum perspiciatis molestias numquam veniam. Animi, quidem assumenda quae pariatur repudiandae, fuga labore aut a temporibus iste neque ab ea reiciendis soluta numquam aperiam, qui quos ipsum ex quas.</p>
         </div>
     </div>
-    <!-- End First Row -->
-
-    <!-- Start Second Row -->
-    <div class="row">
-        <h1>In Publication</h1>
-        <div class="col-lg-6 mb-3">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-            <span><img src="{% static 'intro/img/cover/cover1.jpg' %}" alt=""></span>
-            </a>
-        </div>
-        <div class="col-lg-6 mb-3">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="{% static 'intro/img/cover/cover2.jpg' %}" class="img-fluid"  alt="">
-            </a>
-        </div>
-    </div>
-    <!-- End Second Row -->
-  </div>
-<!-- End Content -->
 
 
 {% endblock content %}
