@@ -21,3 +21,7 @@ def test(request):
 
 def research(request):
     return render(request, 'intro/research.html')
+
+
+def team2(request):
+    return render(request, 'intro/team2.html')

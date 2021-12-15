@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html> -->
+{% extends 'intro/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div style="margin-top:150px;">
+
+    <section class="team">
+        <div class="container py-5 ">
+            <div class="row text-center">
+                <div class="col-lg-8 mx-auto col-md-12 col-sm-12 col-12">
+                    <h1>The Team</h1>
+                    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores animi nihil unde? Praesentium eveniet perspiciatis iste reprehenderit fugiat distinctio dolor consequuntur corporis quod harum, sit, numquam aliquam temporibus non?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+                            <img src="{% static 'intro/img/team/1.jpg' %}" id="pd" alt="" class="img-fluid"  srcset="">
+                        </div>
+                        <div class="col-lg-7 md-6 col-sm-6 col-6">
+                            <h5>Abhishek</h5>
+                            <small class="small">Developer</small>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, quibusdam nisi numquam a aspernatur consequatur?</p>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-linkedin"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+{% endblock content %}

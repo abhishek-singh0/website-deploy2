@@ -1,0 +1,17 @@
+#pd{
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
+}
+
+.p1{
+    font-weight: lighter;
+    color: gray;
+    font-size: 21px;
+}
+
+.small{
+    font-weight: bold;
+    color: gray;
+}
