@@ -25,3 +25,9 @@ def research(request):
 
 def team2(request):
     return render(request, 'intro/team2.html')
+
+def gallery(request):
+    return render(request, 'intro/gallery.html')
+
+def error404(request):
+    return render(request, 'intro/page-404.html')

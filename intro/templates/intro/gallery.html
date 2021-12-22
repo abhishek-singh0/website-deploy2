@@ -2,23 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
     <link rel="stylesheet" href="{% static 'intro/css/style.css' %}">
     {% block style_and_script %}{% endblock style_and_script %}
     <title>SR LAB {% block title %} {% endblock %}</title>
+	
+	<link rel="stylesheet" href="/static/intro/css/gallery/accordiongallery.core.css" type="text/css" />
+	<link rel="stylesheet" href="/static/intro/css/gallery/accordiongallery.oxygen.css" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/static/intro/js/gallery/jquery.accordiongallery.min.js"></script>
+	<link rel="stylesheet" href="/static/intro/css/gallery/accordiongallery.examples.css" type="text/css" />
+	<script>		
+		$(document).ready(function() {			
+			$('#gallery').accordionGallery({
+				theme: 'oxygen',
+				maxHeight: 370,	
+				scrollSpeed: 2000,
+				minSliceWidth: 150,
+                maxSliceWidth: 500,
+			});
+		});
+	</script>	
+		<style>
+			.lead { font-size: 1.5rem; font-weight: 300; }
+            .heading_h1 { margin: 130px auto 30px auto; max-width: 960px; line-height: 1.6;  }
+</style>
 </head>
-<body>
+<body>		
 
-
-<!-- Start Navbar -->
+    <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="navbar-top">
         <div class="container">
             <a class="navbar-brand " href=" {% url 'index' %} "><img src="{% static 'intro/img/team/logo.png' %}" alt="DU Logo" height="76px"><span class="lab-text ms-3">S.Raghuvanshi Lab</span></a>
@@ -54,15 +72,97 @@
     </nav>
 <!-- Stop Navbar -->
 
-<div class="dynamic-content">
-<!-- Start content -->
-    {% block content %}
-
-    {% endblock content %}
-<!-- End Content  -->
-</div>
+<!-- Gallery Started -->
+	<div class="heading_h1 "><h1 class="text-center fw-bold"">Gallery</h1></div>
 
 
+	<article id="gallery">
+		
+		<section>
+			<h1>DSC </h1>
+			<a href="/static/intro/img/gallery/DSC/DSC_0003.jpg" title="The city of Zlatograd in Bulgaria">
+				<img src="/static/intro/img/gallery/DSC/DSC_0003.jpg" width="125" height="90" />
+				<p>Zlatograd, Bulgaria</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/church-large.jpg" title="Interior of Saint-Maimbœuf church, built in the 19th century in Montbéliard, France">
+				<img src="/static/intro/img/gallery/commons/church-thumb.jpg" width="125" height="90" />
+				<p>Saint-Maimbœuf, France</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/chiang-large.jpg" title="National Chiang Kai-shek Memorial Hall in Taipei (Republic of China)">
+				<img src="/static/intro/img/gallery/commons/chiang-thumb.jpg" width="125" height="90" />
+				<p>Chiang Kai-shek Memorial</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/ebrach-large.jpg" title="Rose window in the church of Ebrach Abbey, Bavaria">
+				<img src="/static/intro/img/gallery/commons/ebrach-thumb.jpg" width="125" height="90" />
+				<p>Ebrach Abbey, Bavaria</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/bamberg-large.jpg" title="The old townhall of Bamberg, Bavaria">
+				<img src="/static/intro/img/gallery/commons/bamberg-thumb.jpg" width="125" height="90" />
+				<p>Bamberg, Bavaria</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/sanalipio-large.jpg" title="San Alipio facade door of Saint Mark's Basilica of Venice. Lunette">
+				<img src="/static/intro/img/gallery/commons/sanalipio-thumb.jpg" width="125" height="90" />
+				<p>Saint Mark's Basilica</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/valencia-large.jpg" title="Old narrow-gauge electric car of FEVE at Pont de Fusta railway station">
+				<img src="/static/intro/img/gallery/commons/valencia-thumb.jpg" width="125" height="90" />
+				<p>Valencia, Spain in 1987</p>
+			</a>
+		</section>
+		
+		<section>
+			<h1>Nature</h1>					
+			<a href="/static/intro/img/gallery/commons/geyser-large.jpg" title="Geyser in Geysir, Iceland">
+				<img src="/static/intro/img/gallery/commons/geyser-thumb.jpg" width="125" height="90" />
+				<p>Geyser, Iceland</p>
+			</a>					
+			<a href="/static/intro/img/gallery/commons/mandarin-large.jpg" title="Reflection of Jungle Palace of Hanover Zoo, with a male Mandarin Duck (Aix galericulata)">
+				<img src="/static/intro/img/gallery/commons/mandarin-thumb.jpg" width="125" height="90" />
+				<p>Mandarin Duck, Hanover</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/boletus-large.jpg" title="Unidentified Boletus growing in a Finnish forest at Heinäsaari island">
+				<img src="/static/intro/img/gallery/commons/boletus-thumb.jpg" width="125" height="90" />
+				<p>Boletus, Finland</p>
+			</a>
+		</section>
+		
+		<section>
+			<h1>DSC </h1>
+			<a href="/static/intro/img/gallery/DSC/DSC_0003.jpg" title="The city of Zlatograd in Bulgaria">
+				<img src="/static/intro/img/gallery/DSC/DSC_0003.jpg" width="125" height="90" />
+				<p>Zlatograd, Bulgaria</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/church-large.jpg" title="Interior of Saint-Maimbœuf church, built in the 19th century in Montbéliard, France">
+				<img src="/static/intro/img/gallery/commons/church-thumb.jpg" width="125" height="90" />
+				<p>Saint-Maimbœuf, France</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/chiang-large.jpg" title="National Chiang Kai-shek Memorial Hall in Taipei (Republic of China)">
+				<img src="/static/intro/img/gallery/commons/chiang-thumb.jpg" width="125" height="90" />
+				<p>Chiang Kai-shek Memorial</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/ebrach-large.jpg" title="Rose window in the church of Ebrach Abbey, Bavaria">
+				<img src="/static/intro/img/gallery/commons/ebrach-thumb.jpg" width="125" height="90" />
+				<p>Ebrach Abbey, Bavaria</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/bamberg-large.jpg" title="The old townhall of Bamberg, Bavaria">
+				<img src="/static/intro/img/gallery/commons/bamberg-thumb.jpg" width="125" height="90" />
+				<p>Bamberg, Bavaria</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/sanalipio-large.jpg" title="San Alipio facade door of Saint Mark's Basilica of Venice. Lunette">
+				<img src="/static/intro/img/gallery/commons/sanalipio-thumb.jpg" width="125" height="90" />
+				<p>Saint Mark's Basilica</p>
+			</a>
+			<a href="/static/intro/img/gallery/commons/valencia-large.jpg" title="Old narrow-gauge electric car of FEVE at Pont de Fusta railway station">
+				<img src="/static/intro/img/gallery/commons/valencia-thumb.jpg" width="125" height="90" />
+				<p>Valencia, Spain in 1987</p>
+			</a>
+		</section>
+
+	
+			
+	</article>
+
+<!-- Gallery Ended -->
 
 <!-- Start Footer -->
 <footer class="bd-footer py-5 mt-5 bg-light sticky">
@@ -126,10 +226,6 @@
 
 <!-- End Footer -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
 
-
-  </body>
+</body>
 </html>

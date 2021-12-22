@@ -2,66 +2,101 @@
 {% extends 'intro/base.html' %}
 {% load static %}
 
-<div>
+{% block title %} | Research {% endblock %}
+
 {% block content %}
+<div style="margin-top:100px;">
+<!-- Start First -->
+    <div class="container col-xxl-8 px-4 py-5" id="back-2y">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Research in the Lab</h1>
+                <p class="lead">
+                    
+                    The primary emphasis of the Meyers lab is the analysis of small RNAs in plants. With our many collaborators, we have pioneered genomic analysis of small RNAs and their targets, working with “next-gen” sequencing technologies nearly since their invention.
+                
+                </p>
+                <p class="lead">
+                    Our work with next-gen sequencing stretches back to ~2001, when Blake was funded by the NSF to apply “MPSS” to the analysis of gene expression in Arabidopsis. This led to the development in the Meyers lab of the first publicly-accessible browser for next-gen data. 
+                
+                </p>
+                <p class='lead'>
+                    After moving to the University of Delaware in 2002, we continued to develop the application to mRNA and small RNA analyses of first MPSS, then 454, and finally the still-current Illumina SBS sequencing.
+                
+                </p>
 
-    <div class="container">
-        <div class="row">
-              <!-- Start Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{% static 'intro/img/slider/rice4.jpg' %}" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                    <h5 class="animated fadeInDown" style="animation-delay: 1s">First slide label</h5>
-                    <p class="animated fadeInDown d-none d-md-block" style="animation-delay: 1s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laboriosam veritatis quos! Deserunt!</p>
-                    <p class="animated fadeInUp swing" style="animation-delay: 1s">
-                        <a href="#">Learn More</a>
-                    </p>
-                </div>
             </div>
-            <div class="carousel-item">
-                <img src="{% static 'intro/img/slider/rice5.jpg' %}" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                    <h5 class="animated fadeInDown" style="animation-delay: 1s">First slide label</h5>
-                    <p class="animated fadeInDown d-none d-md-block" style="animation-delay: 1s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laboriosam veritatis quos! Deserunt!</p>
-                    <p class="animated fadeInUp" style="animation-delay: 1s">
-                        <a href="#">Learn More</a>
-                    </p>
-                </div>
+
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{% static 'intro/img/research/research1.jpg' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="200" loading="lazy" >
             </div>
-            <div class="carousel-item">
-                <img src="{% static 'intro/img/slider/rice3.jpg' %}" class="d-block w-100" alt="...">
-                <div class="carousel-caption ">
-                    <h5 class="animated fadeInDown" style="animation-delay: 1s">First slide label</h5>
-                    <p class="animated fadeInDown d-none d-md-block" style="animation-delay: 1s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laboriosam veritatis quos! Deserunt!</p>
-                    <p class="animated fadeInUp" style="animation-delay: 1ss">
-                        <a href="#">Learn More</a>
-                    </p>
-                </div>
-            </div>
+        
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div> 
-<!-- Stop Carousel -->
-        </div>
+
     </div>
+<!-- End First -->
 
 
-{% endblock content %}
+<!--Start Second -->
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{% static 'intro/img/research/research2.jpg' %}" id="Hero_image" class="d-block mx-lg-auto img-fluid" alt="resarch 2" width="700" height="100" loading="lazy" >
+        </div>
+        <div class="col-lg-6">
+            <p class="lead">
+                In 2005, with collaborator Pam Green, we were the first to use next-gen sequencing for the analysis of small RNAs, and in 2008, our labs co-developed “PARE” for the genome-wide analysis of cleaved mRNAs (PARE = Parallel Analysis of RNA Ends).
+            </p>
+            <p class = "lead" >
+                The Meyers lab has widely applied these methods to study plant genomes and their RNA products, and the lab continues to develop and apply novel informatics approaches for the analysis of RNA function in plants.
+            </p>
+            <p class = "lead">
+                Specific areas of research include the use of these technologies to assess small RNA function and biogenesis in a broad range of plants, including Arabidopsis, maize, soybean, rice, and diverse other species. These data are being used to identify novel transcripts, to study small RNAs, microRNA targets, alternatively-polyadenylated transcripts, non-coding RNAs and gene silencing. The data are being analyzed to determine patterns of gene expression under different developmental conditions, for example to identify tissue-specific gene expression.
+            </p>
+        </div>
+
+    </div>
 </div>
+<!--End Second -->
+
+
+<!--Start third -->
+<div style="background-color: #e3f2fd;">
+    <div class="container col-xxl-8 px-4 py-5 " >
+        <p class="lead">
+            Our recent work focuses on phased secondary siRNAs in plants, including their function, evolution, and biogenesis. We have also created several databases with query & analysis tools to enable the use of these data for the scientific community. Our most popular site is Arabidopsis SBS, but we’ve also developed a number of other organism-specific variants of this site, available at our website overview page.
+
+        </p>
+        <p class="lead">
+            These studies are centered on the use of novel genomics tools and bioinformatics approaches to address fundamental questions of small RNA biology, gene expression, and genome regulation in plants.
+        
+            Phased, secondary, small interfering RNAs (phasiRNAs) are of particular interest to us. Originally designated as trans-acting small interfering RNAs or tasiRNAs, the wider group of phasiRNAs are triggered by microRNAs and produced as siRNAs. Like microRNAs, phasiRNA function in the suppression of target transcript levels.
+        </p>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+
+                <p class = "lead" >
+                    The Meyers lab has widely applied these methods to study plant genomes and their RNA products, and the lab continues to develop and apply novel informatics approaches for the analysis of RNA function in plants.
+                </p>
+                <p class = "lead">
+                    Specific areas of research include the use of these technologies to assess small RNA function and biogenesis in a broad range of plants, including Arabidopsis, maize, soybean, rice, and diverse other species. These data are being used to identify novel transcripts, to study small RNAs, microRNA targets, alternatively-polyadenylated transcripts, non-coding RNAs and gene silencing. The data are being analyzed to determine patterns of gene expression under different developmental conditions, for example to identify tissue-specific gene expression.
+                </p>
+            </div>
+
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{% static 'intro/img/research/research2.jpg' %}" id="Hero_image" class="d-block mx-lg-auto img-fluid" alt="resarch 2" width="700" height="100" loading="lazy" >
+            </div>
+    
+        </div>
+    </div>
+</div>
+<!--End third -->
+
+
+
+</div>
+{% endblock content %}
+
    
 </body>
 </html>

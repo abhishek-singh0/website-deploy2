@@ -10,6 +10,7 @@ urlpatterns = [
     path('test/', views.test, name="test"),
     path('research/', views.research, name="research"),
     path('team2/', views.team2, name="team2" ),
+    path('gallery/', views.gallery, name="gallery"),
+    path('404',views.error404, name='404'),
 
-    
 ]
