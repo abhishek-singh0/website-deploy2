@@ -1,1 +1,1 @@
-web: gunicorn srlab.wsgi --log-file -
+web: gunicorn srlab.wsgi --log-file - 
