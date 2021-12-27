@@ -8,6 +8,7 @@ django = "*"
 python-decouple = "*"
 heroku = "*"
 gunicorn = "==19.9.0"
+whitenoise = "*"
 
 [dev-packages]
 
