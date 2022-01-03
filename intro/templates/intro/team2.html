@@ -7,25 +7,78 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'intro/css/team.css' %}">
 <div style="margin-top:150px;">
-    <section class="team">
-        <div class="container py-5 ">
-            <div class="row text-center">
-                <div class="col-lg-8 mx-auto col-md-12 col-sm-12 col-12">
-                    <h1>The Team</h1>
-                    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores animi nihil unde? Praesentium eveniet perspiciatis iste reprehenderit fugiat distinctio dolor consequuntur corporis quod harum, sit, numquam aliquam temporibus non?</p>
+    <section class="pi">
+        {% comment %} <div>
+            <h1 class="h1_line text-primary">Principal Investigator</h1>
+        </div> {% endcomment %}
+        <div class="container col-xxl-8 px-4 py-5" id="back-2y">
+            <div class="row flex-lg-row-reverse  g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-7 fw-bold lh-1 mb-3">Meet <span class="text-danger animated fadeInDown" style="animation-delay: 1s">Saurabh Raghuvanshi</span></h1>
+                    <small class="small">Professor</small>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam iure dicta placeat maiores! Voluptatem dolor, distinctio expedita tempore nisi aut quae error tenetur optio provident et voluptatum harum quos natus neque. Iste nihil est nostrum consequuntur facilis. Inventore ea vitae consequatur dolores voluptas? Voluptatum necessitatibus impedit nam culpa dignissimos ducimus.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        {% comment %} <button type="button" class="btn btn-success btn-lg px-4 me-md-2"><a href=" {% url 'research' %}" style="text-decoration: none; color:white;">SR's CV</a> </button> {% endcomment %}
+                        <div class="badge badge-primary" ><a href="#" style="text-decoration:none;">Saurabh Raghuanshi's CV</a></div>
+                    </div>
                 </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{% static '/intro/img/team/SR.png' %}" class="d-block mx-lg-auto img-fluid border border-success" id="img" alt="Bootstrap Themes" width="700" height="200" loading="lazy" >
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+            <!--Start Horizontal Bar (Lab Memebers)-->
+            <div class="container-fluid p-3 mb-2 bg-success text-white d-flex justify-content-around ">
+                <div class="font-weight-bold" id="test1">LAB MEMBERS</div>
+                <div></div>
+                <div></div>
+            </div>
+            <!--End Horizontal Bar (Lab Memebers)-->
+    
+    <section class="team">
+
+        <!--Team Content-->
+
+
+    <section class="post-doc">
+        <div class="container py-5 ">
+            <div>
+                <h1 class="h1_line text-primary">POST-DOCTORAL & RESEARCH SCIENTISTS</h1>
             </div>
 
             <div class="row">
+
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-6 col-6">
                             <img src="{% static 'intro/img/team/shivani.png' %}" id="test" alt="" class="img-fluid"  srcset="">
                         </div>
                         <div class="col-lg-7 md-6 col-sm-6 col-6 pt-3">
-                            <h5>Shivani</h5>
-                            <small class="small">Developer</small>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, quibusdam nisi numquam a aspernatur consequatur?</p>
+                            <h5 class="title">Dr. Shivani Kansal</h5>
+                            <small class="small">Project Scientist - I </small>
+                            <p>
+                                *Big data analysis including GWAS, genome assembly, transcriptome analysis, genotyping. 
+                                *Calcium mediated regulation of miRNOme in rice
+                            </p>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-linkedin"></i></span>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+                            <img src="{% static 'intro/img/team/Sonia.png' %}" id="test" alt="" class="img-fluid"  srcset="">
+                        </div>
+                        <div class="col-lg-7 md-6 col-sm-6 col-6 pt-3">
+                            <h5 class="title">Dr Sonia Balyan</h5>
+                            <small class="small">Project Scientist II</small>
+                            <p>*Database development, Web designing, BIG data visualisation (Biological datasets) *miRNA-mediated regulation of drought response in rice</p>
                             <span><i class="fa-brands fa-facebook"></i></span>
                             <span><i class="fa-brands fa-twitter"></i></span>
                             <span><i class="fa-brands fa-linkedin"></i></span>
@@ -33,58 +86,110 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-6 col-sm-6 col-6">
-                            <img src="{% static 'intro/img/team/team2.png' %}" id="test" alt="" class="img-fluid"  srcset="">
-                        </div>
-                        <div class="col-lg-7 md-6 col-sm-6 col-6 pt-3">
-                            <h5 class="title">Pratyush</h5>
-                            <small class="small">Project Associate</small>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, quibusdam nisi numquam a aspernatur consequatur?</p>
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                            <span><i class="fa-brands fa-linkedin"></i></span>
-                        </div>
-                    </div>  <!--First Row End-->
             </div> 
 
-            <div class="row pt-3">
+            <div class="row pt-3"> <!--Row 2 -->
+
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="row">
+                    <div class="row pt-3">
                         <div class="col-lg-5 col-md-6 col-sm-6 col-6">
-                            <img src="/static/intro/img/team/Vaishali.png" id="test" alt="" class="img-fluid" srcset="">
+                            <img src="{% static 'intro/img/team/Pratibha.png' %}" id="test" alt="" class="img-fluid"  srcset="">
                         </div>
                         <div class="col-lg-7 md-6 col-sm-6 col-6 pt-3">
-                            <h5>Vaishali</h5>
-                            <small class="small">Developer</small>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, quibusdam nisi numquam a aspernatur consequatur?</p>
+                            <h5 class="title">Pratibha Gaur</h5>
+                            <small class="small">Ph.D. Student (Thesis Submitted)</small>
+                            <p>
+                                Semantic digitization and characterization of molecular networks in rice.
+                            </p>
                             <span><i class="fa-brands fa-facebook"></i></span>
                             <span><i class="fa-brands fa-twitter"></i></span>
                             <span><i class="fa-brands fa-linkedin"></i></span>
+                        </div>
+                    </div>  
+                </div>
 
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="row pt-3">
+                        <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+                            <img src="{% static 'intro/img/team/deepika.png' %}" id="test" alt="" class="img-fluid"  srcset="">
+                        </div>
+                        <div class="col-lg-7 md-6 col-sm-6 col-6 pt-3">
+                            <h5 class="title">Deepika Sharma</h5>
+                            <small class="small">Ph.D student </small>
+                            <p>Analysis of drought responsive regulatory network in plants.</p>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-linkedin"></i></span>
                         </div>
                     </div>
                 </div>
+
+            </div> <!--Row 2-->
+
+            <div class="row pt-3"> <!--Row 3 -->
+
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="row">
+                    <div class="row pt-3">
                         <div class="col-lg-5 col-md-6 col-sm-6 col-6">
-                            <img src="/static/intro/img/team/team1.png" id="test" alt="" class="img-fluid" srcset="">
+                            <img src="{% static 'intro/img/team/Vaishali.png' %}" id="test" alt="" class="img-fluid"  srcset="">
                         </div>
                         <div class="col-lg-7 md-6 col-sm-6 col-6 pt-3">
-                            <h5 class="title">Pratyush</h5>
-                            <small class="small">Project Associate</small>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, quibusdam nisi numquam a aspernatur consequatur?</p>
+                            <h5 class="title">Vaishali Panwar</h5>
+                            <small class="small">Ph.D. Student</small>
+                            <p>
+                                To study the regulation of miRNA genes in Rice.
+                            </p>
                             <span><i class="fa-brands fa-facebook"></i></span>
                             <span><i class="fa-brands fa-twitter"></i></span>
                             <span><i class="fa-brands fa-linkedin"></i></span>
+                        </div>
+                    </div>  
+                </div>
 
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="row pt-3">
+                        <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+                            <img src="{% static 'intro/img/team/Ringyao_Jajo.png' %}" id="test" alt="" class="img-fluid"  srcset="">
+                        </div>
+                        <div class="col-lg-7 md-6 col-sm-6 col-6 pt-3">
+                            <h5 class="title">Ringyao Jajo</h5>
+                            <small class="small">Ph.D student </small>
+                            <p>Analysis of Stress Responsive Transcription Factors in Rice.</p>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-linkedin"></i></span>
                         </div>
                     </div>
-̨̨̨̨̨
+                </div>
+
+            </div> <!--Row 3-->
+
+            <div class="row pt-3"> <!--Row 4 -->
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="row pt-3">
+                        <div class="col-lg-5 col-md-6 col-sm-6 col-6">
+                            <img src="{% static 'intro/img/team/dummy.jpg' %}" id="test" alt="" class="img-fluid"  srcset="">
+                        </div>
+                        <div class="col-lg-7 md-6 col-sm-6 col-6 pt-3">
+                            <h5 class="title">Tonu Angaila Chithung</h5>
+                            <small class="small">Ph.D. Student</small>
+                            <p>
+                                Characterization of regulatory schema of drought responsive miRNAs in rice.
+                            </p>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-linkedin"></i></span>
+                        </div>
+                    </div>  
+                </div>
+
+
+
+            </div> <!--Row 4-->
 
         </div> <!-- Container End-->
-    </section> 
+    </section>
 
 </div>
 {% endblock content %}

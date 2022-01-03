@@ -3,7 +3,6 @@
     -webkit-box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
     box-shadow: -1px 3px 12px -3px rgba(0,0,0,0.75);
-
 }
 
 #test{
@@ -41,3 +40,46 @@
     color: #000000;
     font-size: 21px;
 }
+
+#test1{
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px -4px 35px rgba(0,0,0,0.7);
+
+}
+
+/* Line before and After the Heading */
+
+
+      .h1_line {
+        font-family: sans-serif;
+        margin: auto auto 50px;
+        color: #228B22;
+        text-align: center;
+        font-size: 30px;
+        max-width: 600px;
+        position: relative;
+      }
+      .h1_line:before {
+        content: "";
+        display: block;
+        width: 130px;
+        height: 5px;
+        background: #191970;
+        left: 0;
+        top: 50%;
+        position: absolute;
+      }
+      .h1_line:after {
+        content: "";
+        display: block;
+        width: 110px;
+        height: 5px;
+        background: #191970;
+        right: 0;
+        top: 50%;
+        position: absolute;
+      }
+
+
+    /* End Line before and After the Heading */
